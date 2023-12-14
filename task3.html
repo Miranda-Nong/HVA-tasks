@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOUR CHANGER</title>
+    <style>
+        #colorbox{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            margin: 20px;
+        }
+        button{
+            font-size: 15px;
+            margin: 5px;
+            padding: 16px;
+            cursor: pointer;
+        
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="colorbox"></div>
+
+    <button onclick="changecolor('red')">red</button>
+    <button onclick="changecolor('blue')">blue</button>
+    <button onclick="changecolor('green')">green</button>
+<script>
+        function changecolor(color){
+            document.getElementById('colorbox').style.backgroundColor=color;
+            console.log("color");
+        }
+    </script>
+</body>
+
+</html>
